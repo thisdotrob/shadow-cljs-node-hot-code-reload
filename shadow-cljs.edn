@@ -1,0 +1,8 @@
+{:source-paths ["src"]
+ :builds {:script
+          {:id        :script
+           :target    :node-script
+           :main      demo.script/main
+           :output-to "out/demo-script/script.js"
+           :devtools {:before-load-async demo.script/stop
+                      :after-load demo.script/start}}}}
